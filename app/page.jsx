@@ -37,19 +37,25 @@ export default function Home() {
             >
                 <FindOut></FindOut>
             </div>
-            <div className="w-screen h-full  flex flex-col items-center my-10   bg-white">
+            <div
+                className="w-screen h-full  flex flex-col items-center my-10   bg-white"
+                name="services"
+            >
                 <h1 className="text-3xl text-pink-600 font-semibold mt-10">
                     Our Services
                 </h1>
                 <ServiceCard></ServiceCard>
             </div>
-            <div className="w-screen h-full  flex flex-col items-center my-10   bg-white">
+            <div
+                className="w-screen h-full  flex flex-col items-center my-10   bg-white"
+                name="gallery"
+            >
                 <h1 className="text-3xl text-pink-600 font-semibold my-16">
                     Our Gallery
                 </h1>
                 <OurGallery></OurGallery>
             </div>
-            <div className="text-center">
+            <div className="text-center" name="aboutus">
                 <h1 className="text-3xl text-pink-600 font-semibold my-16">
                     Meet Our Team
                 </h1>

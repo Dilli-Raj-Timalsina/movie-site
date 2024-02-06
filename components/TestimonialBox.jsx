@@ -1,6 +1,9 @@
 export default function TestimonialBox() {
     return (
-        <div className="container my-24 mx-auto md:px-6 bg-slate-200 py-10">
+        <div
+            className="container my-24 mx-auto md:px-6 bg-slate-200 py-10"
+            name="testimonials"
+        >
             <section className="mb-32 text-center">
                 <h2 className="mb-12 text-3xl font-bold">Testimonials</h2>
 
@@ -14,11 +17,11 @@ export default function TestimonialBox() {
                         </div>
                         <h5 className="mb-2 text-lg font-bold">Maria Smantha</h5>
                         <h6 className="mb-4 font-medium text-primary dark:text-primary-400">
-                            Web Developer
+                            Music Video
                         </h6>
                         <p className="mb-4">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod
-                            eos id officiis hic tenetur quae quaerat ad velit ab hic.
+                            "Outstanding creativity and dedication to detail. A truly
+                            top-notch production experience , satisfactory experience"
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 viewBox="0 96 960 960"
@@ -102,11 +105,11 @@ export default function TestimonialBox() {
                         </div>
                         <h5 className="mb-2 text-lg font-bold">Lisa Cudrow</h5>
                         <h6 className="mb-4 font-medium text-primary dark:text-primary-400">
-                            Graphic Designer
+                            Film Producer
                         </h6>
                         <p className="mb-4">
-                            Ut enim ad minima veniam, quis nostrum exercitationem ullam
-                            corporis suscipit laboriosam, nisi ut aliquid commodi.
+                            "Flawless execution and exceptional storytelling. A film
+                            production company that exceeds expectations every time "
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 viewBox="0 96 960 960"
@@ -190,11 +193,11 @@ export default function TestimonialBox() {
                         </div>
                         <h5 className="mb-2 text-lg font-bold">John Smith</h5>
                         <h6 className="mb-4 font-medium text-primary dark:text-primary-400">
-                            Marketing Specialist
+                            Film Production
                         </h6>
                         <p className="mb-4">
-                            At vero eos et accusamus et iusto odio dignissimos ducimus qui
-                            blanditiis praesentium voluptatum deleniti atque corrupti.
+                            "Incredible professionalism and a seamless process from start
+                            to finish. The best in the business!"
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 viewBox="0 96 960 960"

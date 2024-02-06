@@ -1,7 +1,8 @@
 "use client";
 import { Link } from "react-scroll";
-
+import { useRouter } from "next/navigation";
 export default function NavBar() {
+    const router = useRouter();
     return (
         <div className="drawer absolute top-0 z-20">
             <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
@@ -33,22 +34,73 @@ export default function NavBar() {
                                 <a>Home</a>
                             </li>
                             <li className="cursor-pointer hover:text-yellow-300 bg-none">
-                                <a>About Us</a>
+                                <button
+                                    onClick={() => {
+                                        router.push("/contact");
+                                    }}
+                                >
+                                    About Us
+                                </button>
                             </li>
                             <li className="cursor-pointer hover:text-yellow-300 bg-none">
-                                <a>Services</a>
+                                <Link
+                                    activeClass="active"
+                                    to="services"
+                                    spy={true}
+                                    smooth={true}
+                                    offset={50}
+                                    duration={800}
+                                >
+                                    Services
+                                </Link>
                             </li>
                             <li className="cursor-pointer hover:text-yellow-300 bg-none">
-                                <a>Clients</a>
+                                <Link
+                                    activeClass="active"
+                                    to="gallery"
+                                    spy={true}
+                                    smooth={true}
+                                    offset={50}
+                                    duration={800}
+                                >
+                                    Gallery
+                                </Link>
                             </li>
                             <li className="cursor-pointer hover:text-yellow-300 bg-none">
-                                <a>Gallery</a>
+                                <Link
+                                    activeClass="active"
+                                    to="clients"
+                                    spy={true}
+                                    smooth={true}
+                                    offset={50}
+                                    duration={800}
+                                >
+                                    Clients
+                                </Link>
                             </li>
                             <li className="cursor-pointer hover:text-yellow-300 bg-none">
-                                <a>Blogs</a>
+                                <Link
+                                    activeClass="active"
+                                    to="testimonials"
+                                    spy={true}
+                                    smooth={true}
+                                    offset={50}
+                                    duration={800}
+                                >
+                                    Testimonials
+                                </Link>
                             </li>
                             <li className="cursor-pointer hover:text-yellow-300 ">
-                                <a>Contact Us</a>
+                                <Link
+                                    activeClass="active"
+                                    to="contact"
+                                    spy={true}
+                                    smooth={true}
+                                    offset={50}
+                                    duration={800}
+                                >
+                                    Contact Us
+                                </Link>
                             </li>
 
                             {/* <li className=" cursor-pointer hover:text-slate-400">
@@ -58,7 +110,7 @@ export default function NavBar() {
                                     spy={true}
                                     smooth={true}
                                     offset={50}
-                                    duration={500}
+                                    duration={800}
                                 >
                                     Contact Us
                                 </Link>
@@ -78,23 +130,74 @@ export default function NavBar() {
                     <li className="cursor-pointer hover:text-yellow-300 bg-none">
                         <a>Home</a>
                     </li>
-                    <li className="cursor-pointer hover:text-yellow-300 bg-none ">
-                        <a>Services</a>
+                    <li className="cursor-pointer hover:text-yellow-300 bg-none">
+                        <button
+                            onClick={() => {
+                                router.push("/contact");
+                            }}
+                        >
+                            About Us
+                        </button>
                     </li>
-                    <li className="cursor-pointer hover:text-yellow-300 bg-none ">
-                        <a>About</a>
+                    <li className="cursor-pointer hover:text-yellow-300 bg-none">
+                        <Link
+                            activeClass="active"
+                            to="services"
+                            spy={true}
+                            smooth={true}
+                            offset={50}
+                            duration={800}
+                        >
+                            Services
+                        </Link>
                     </li>
-                    <li className="cursor-pointer hover:text-yellow-300 bg-none ">
-                        <a>Projects</a>
+                    <li className="cursor-pointer hover:text-yellow-300 bg-none">
+                        <Link
+                            activeClass="active"
+                            to="gallery"
+                            spy={true}
+                            smooth={true}
+                            offset={50}
+                            duration={800}
+                        >
+                            Gallery
+                        </Link>
                     </li>
-                    <li className="cursor-pointer hover:text-yellow-300 bg-none ">
-                        <a>Contacts</a>
+                    <li className="cursor-pointer hover:text-yellow-300 bg-none">
+                        <Link
+                            activeClass="active"
+                            to="clients"
+                            spy={true}
+                            smooth={true}
+                            offset={50}
+                            duration={800}
+                        >
+                            Clients
+                        </Link>
                     </li>
-                    <li className="cursor-pointer hover:text-yellow-300 bg-none ">
-                        <a>Blogs</a>
+                    <li className="cursor-pointer hover:text-yellow-300 bg-none">
+                        <Link
+                            activeClass="active"
+                            to="testimonials"
+                            spy={true}
+                            smooth={true}
+                            offset={50}
+                            duration={800}
+                        >
+                            Testimonials
+                        </Link>
                     </li>
-                    <li className="cursor-pointer hover:text-yellow-300 bg-none ">
-                        <a>FAQ</a>
+                    <li className="cursor-pointer hover:text-yellow-300 ">
+                        <Link
+                            activeClass="active"
+                            to="contact"
+                            spy={true}
+                            smooth={true}
+                            offset={50}
+                            duration={800}
+                        >
+                            Contact Us
+                        </Link>
                     </li>
                 </ul>
             </div>

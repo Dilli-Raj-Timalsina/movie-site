@@ -29,10 +29,10 @@ export default function ContactUsPage() {
                         <div className="grid md:grid-cols-2">
                             <div className="h-full pr-6">
                                 <p className="mt-3 mb-12 text-lg text-gray-600 dark:text-slate-400">
-                                    Class aptent taciti sociosqu ad litora torquent per
-                                    conubia nostra, per inceptos himenaeos. Duis nec ipsum
-                                    orci. Ut scelerisque sagittis ante, ac tincidunt sem
-                                    venenatis ut.
+                                    We'd love to hear from you! Whether you have a
+                                    question, feedback, or simply want to say hello, we're
+                                    here to help. Reach out to us, and we'll be sure to
+                                    get back to you as soon as possible.
                                 </p>
                                 <ul className="mb-6 md:mb-0">
                                     <li className="flex">
@@ -58,10 +58,10 @@ export default function ContactUsPage() {
                                                 Our Address
                                             </h3>
                                             <p className="text-gray-600 dark:text-slate-400">
-                                                1230 Maecenas Street Donec Road
+                                                UNIT-21 MEADWAY PRECINCT TILEHURST READING
                                             </p>
                                             <p className="text-gray-600 dark:text-slate-400">
-                                                New York, EEUU
+                                                UNITED KINGDOM RG30 4AA
                                             </p>
                                         </div>
                                     </li>
@@ -89,10 +89,10 @@ export default function ContactUsPage() {
                                                 Contact
                                             </h3>
                                             <p className="text-gray-600 dark:text-slate-400">
-                                                Mobile: +1 (123) 456-7890
+                                                Mobile: 07462295395
                                             </p>
                                             <p className="text-gray-600 dark:text-slate-400">
-                                                Mail: tailnext@gmail.com
+                                                Mail: contact@premisvision.co.uk
                                             </p>
                                         </div>
                                     </li>

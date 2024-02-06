@@ -2,14 +2,14 @@ export default function FindOut() {
     return (
         <div className="bg-slate-50  text-center md:mt-20   mx-8 md:mx-20   mt-10">
             <h1 className="text-4xl text-pink-600 font-semibold ">
-                The Visual House – Video Production House in Delhi NCR
+                PREMIS VISION UK – Video Production House in United Kingdom (UK)
             </h1>
             <br />
             <p className=" text-base text-gray-500">
-                The Visual House is one of the best video production companies in Delhi,
-                NCR & it’s not only making videos we excel at! We provide end to end
-                solutions; be it Social Media/ Digital Marketing, Website Designing or
-                Communication Management (IEC, BCC & SBCC).
+                PREMIS VISION is one of the best video production companies in UK, NCR &
+                it’s not only making videos we excel at! We provide end to end solutions;
+                be it Social Media/ Digital Marketing, Website Designing or Communication
+                Management (IEC, BCC & SBCC).
             </p>
             <br />
             <p className=" text-base text-gray-500">

@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const UpcomingMoviesSection = () => {
     return (
         <div className="container mb-24 mt-16 mx-auto md:px-6">
@@ -35,14 +37,15 @@ const UpcomingMoviesSection = () => {
                                     unraveling the mysteries of the past while forging
                                     unexpected connections in the present.
                                 </p>
-                                <button
+                                <Link
                                     type="button"
                                     className="btn btn-active btn-neutral"
                                     data-te-ripple-init
                                     data-te-ripple-color="light"
+                                    href={"/movie"}
                                 >
                                     Learn more
-                                </button>
+                                </Link>
                             </div>
                         </div>
                     </div>

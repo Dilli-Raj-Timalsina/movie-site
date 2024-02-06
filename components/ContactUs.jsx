@@ -1,6 +1,6 @@
 export function ContactUs2() {
     return (
-        <div className="container my-24 mx-auto md:px-6 ">
+        <div className="container my-24 mx-auto md:px-6 " name="contact">
             {/* <!-- Section: Design Block --> */}
             <section className="mb-32">
                 <div className="flex justify-center">
@@ -103,13 +103,13 @@ export function ContactUs2() {
                                     </div>
                                     <div className="ml-6 grow">
                                         <p className="mb-2 font-bold dark:text-white">
-                                            Technical support
+                                            Contact support
                                         </p>
                                         <p className="text-neutral-500 dark:text-neutral-200">
-                                            support@example.com
+                                            contact@premisvison.co.uk
                                         </p>
                                         <p className="text-neutral-500 dark:text-neutral-200">
-                                            +1 234-567-89
+                                            Prem Lama : 07462295395
                                         </p>
                                     </div>
                                 </div>
@@ -136,13 +136,10 @@ export function ContactUs2() {
                                     </div>
                                     <div className="ml-6 grow">
                                         <p className="mb-2 font-bold dark:text-white">
-                                            Sales questions
+                                            Dawa Lama
                                         </p>
                                         <p className="text-neutral-500 dark:text-neutral-200">
-                                            sales@example.com
-                                        </p>
-                                        <p className="text-neutral-500 dark:text-neutral-200">
-                                            +1 234-567-89
+                                            dawa.lama@premisvision.co.uk
                                         </p>
                                     </div>
                                 </div>
@@ -169,13 +166,10 @@ export function ContactUs2() {
                                     </div>
                                     <div className="ml-6 grow">
                                         <p className="mb-2 font-bold dark:text-white">
-                                            Press
+                                            Karam Gurung
                                         </p>
                                         <p className="text-neutral-500 dark:text-neutral-200">
-                                            press@example.com
-                                        </p>
-                                        <p className="text-neutral-500 dark:text-neutral-200">
-                                            +1 234-567-89
+                                            karam.gurung@premisvision.co.uk
                                         </p>
                                     </div>
                                 </div>
@@ -202,13 +196,10 @@ export function ContactUs2() {
                                     </div>
                                     <div className="ml-6 grow">
                                         <p className="mb-2 font-bold dark:text-white">
-                                            Bug report
+                                            Prem Lama
                                         </p>
                                         <p className="text-neutral-500 dark:text-neutral-200">
-                                            bugs@example.com
-                                        </p>
-                                        <p className="text-neutral-500 dark:text-neutral-200">
-                                            +1 234-567-89
+                                            prem.lama@premisvision.co.uk
                                         </p>
                                     </div>
                                 </div>

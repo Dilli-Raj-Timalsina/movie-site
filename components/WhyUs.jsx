@@ -6,13 +6,12 @@ export default function WhyUs() {
                 <div className="flex justify-center">
                     <div className="max-w-[700px] text-center">
                         <h2 className="mb-6 text-center text-3xl font-bold">
-                            Why is it so
-                            <u className="text-primary dark:text-primary-400"> great?</u>
+                            Why choose Us ?
                         </h2>
                         <p className="mb-16 text-neutral-500 dark:text-neutral-300">
-                            Minus fuga aliquid vero facere ducimus quos, quisquam nemo?
-                            Molestias ullam provident vitae error aliquam dolorum
-                            temporibus? Doloremque, quasi
+                            Choose us for top-notch yet budget-friendly solutions.
+                            Experienced devs, plus a dash of digital marketing magic. Your
+                            success, simplified!
                         </p>
                     </div>
                 </div>
@@ -37,8 +36,8 @@ export default function WhyUs() {
                         </div>
                         <h5 className="mb-4 text-lg font-bold">Support 24/7</h5>
                         <p className="text-neutral-500 dark:text-neutral-300">
-                            Laudantium totam quas cumque pariatur at doloremque hic quos
-                            quia eius. Reiciendis optio minus mollitia rerum labore
+                            Our dedicated team is committed to providing prompt and
+                            reliable support, any time of the day or night.
                         </p>
                     </div>
 
@@ -59,10 +58,10 @@ export default function WhyUs() {
                                 />
                             </svg>
                         </div>
-                        <h5 className="mb-4 text-lg font-bold">Safe and solid</h5>
+                        <h5 className="mb-4 text-lg font-bold">Experienced Team</h5>
                         <p className="text-neutral-500 dark:text-neutral-300">
-                            Eum nostrum fugit numquam, voluptates veniam neque quibusdam
-                            ullam aspernatur odio soluta, quisquam dolore animi
+                            Our production house is home to a team of seasoned
+                            professionals ,Your satisfaction is our priority .
                         </p>
                     </div>
 
@@ -85,8 +84,8 @@ export default function WhyUs() {
                         </div>
                         <h5 className="mb-4 text-lg font-bold">Extremely fast</h5>
                         <p className="text-neutral-500 dark:text-neutral-300">
-                            Enim cupiditate, minus nulla dolor cumque iure eveniet facere
-                            ullam beatae hic voluptatibus dolores exercitationem
+                            we care your time and it's our responsibility to delivery
+                            super past work and decision to you .
                         </p>
                     </div>
 
@@ -112,10 +111,10 @@ export default function WhyUs() {
                                 />
                             </svg>
                         </div>
-                        <h5 className="mb-4 text-lg font-bold">Live analytics</h5>
+                        <h5 className="mb-4 text-lg font-bold">Commitment to Quality</h5>
                         <p className="text-neutral-500 dark:text-neutral-300">
-                            Illum doloremque ea, blanditiis sed dolor laborum praesentium
-                            maxime sint, consectetur atque ipsum ab adipisci
+                            We are committed to delivering top-notch productions,
+                            emphasizing attention to detail and a dedication
                         </p>
                     </div>
                 </div>

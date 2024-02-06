@@ -1,6 +1,6 @@
 export default function OurClients() {
     return (
-        <div className="flex flex-col md:pb-20 pb-10  bg-white">
+        <div className="flex flex-col md:pb-20 pb-10  bg-white" name="clients">
             <h1 className="text-3xl text-gray-900 font-bold md:py-14 py-7 text-center">
                 Our Clients
             </h1>
