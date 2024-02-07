@@ -100,30 +100,37 @@ function ImageDescription() {
                             Movie Release Details
                         </h2>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                            <div>
-                                <h3 className="text-2xl font-semibold text-gray-700 mb-2">
+                            <div className="border border-gray-200 rounded-lg p-6">
+                                <h3 className="text-2xl font-semibold text-gray-700 mb-4">
+                                    Title
+                                </h3>
+                                <p className="text-gray-600">Woodlang</p>
+                                <h3 className="text-2xl font-semibold text-gray-700 mt-8 mb-4">
                                     Release Date
                                 </h3>
-                                <p className="text-gray-600">Add release date here</p>
-                                <h3 className="text-2xl font-semibold text-gray-700 mt-4 mb-2">
-                                    Location
+                                <p className="text-gray-600">February 15, 2024</p>
+                                <h3 className="text-2xl font-semibold text-gray-700 mt-8 mb-4">
+                                    Duration
                                 </h3>
-                                <p className="text-gray-600">Add location here</p>
+                                <p className="text-gray-600">2 hours 15 minutes</p>
                             </div>
-                            <div>
-                                <h3 className="text-2xl font-semibold text-gray-700 mb-2">
+                            <div className="border border-gray-200 rounded-lg p-6">
+                                <h3 className="text-2xl font-semibold text-gray-700 mb-4">
                                     Actors
                                 </h3>
                                 <ul className="text-gray-600">
-                                    <li>Actor 1</li>
-                                    <li>Actor 2</li>
-                                    <li>Actor 3</li>
+                                    <li>John Doe</li>
+                                    <li>Jane Smith</li>
+                                    <li>Michael Johnson</li>
                                     {/* Add more actors as needed */}
                                 </ul>
-                                <h3 className="text-2xl font-semibold text-gray-700 mt-4 mb-2">
+                                <h3 className="text-2xl font-semibold text-gray-700 mt-8 mb-4">
                                     Contact Details
                                 </h3>
-                                <p className="text-gray-600">Add contact details here</p>
+                                <p className="text-gray-600">
+                                    Mail : contact@premisvision.co.uk
+                                </p>
+                                <p className="text-gray-600">Phone: 07462295395</p>
                             </div>
                         </div>
                     </div>

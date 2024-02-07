@@ -8,16 +8,16 @@ export default function YourProbSection() {
                 <h1 className=" md:text-6xl text-3xl text-white  font-mono font-semibold md:mt-4">
                     PREMIS VISION UK LIMITED
                 </h1>
-                <p className="text-yellow-400 md:mt-6 md:w-1/2 w-full md:text-3xl  text-lg h-fit">
+                <p className="text-yellow-500 md:mt-6 md:w-1/2 w-full md:text-3xl  text-lg h-fit font-bold drop-shadow-lg">
                     Inspiring Breadthing <br />
                     and Living Creativity .
                 </p>
-                <p className="text-white mt-6 md:w-1/2 w-full md:text-xl text-base h-fit">
+                <p className="text-white mt-6 md:w-1/2 w-full md:text-xl text-base h-fit drop-shadow-lg opacity-0">
                     Crafting Dreams, Capturing Stories – Where Imagination Meets Cinematic
                     Brilliance. Welcome to Our Movie Production House, Where Every Frame
                     Tells a Tale and Every Scene Unveils Magic.
                 </p>
-                <p className="text-white  md:w-1/2 w-full md:text-base text-sm h-fit">
+                <p className="text-white  md:w-1/2 w-full md:text-base text-xm h-fit mt-2 opacity-0">
                     Crafting Dreams, Capturing Stories – Where Imagination Meets Cinematic
                 </p>
             </div>

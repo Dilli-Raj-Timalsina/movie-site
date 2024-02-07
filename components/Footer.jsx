@@ -13,12 +13,18 @@ export default function Footer() {
                     offset={50}
                     duration={500}
                 >
-                    <img src="/logo.png" alt="" className="w-16 h-fit cursor-pointer" />
+                    <img
+                        src="/logo.png"
+                        alt=""
+                        className="w-24 h-fit cursor-pointer bg-slate-400"
+                    />
                 </Link>
                 <p className="">
-                    Lorem ipsum dolor sit amet consectetur. Tellus nibh aliquam posuere
-                    mollis ornare at molestie. SLorem ipsum dolor sit amet consectetur.
-                    Tellus nibh aliquam posuere mollis ornare at molestie. S
+                    Premis Vision UK is a reputable film production company dedicated to
+                    creating compelling and impactful cinema. With a keen eye for
+                    storytelling and a commitment to excellence, Premis Vision UK
+                    specializes in producing high-quality films that resonate with
+                    audiences worldwide.
                 </p>
             </nav>
             <nav>
@@ -31,12 +37,30 @@ export default function Footer() {
                 <a className="link link-hover">Support and Help</a>
             </nav>
             <nav>
-                <header className="footer-title text-white text-xl">Contact Us</header>
-                <a className="link link-hover">Terms of use</a>
+                <header className="footer-title text-white text-xl">Terms </header>
                 <a className="link link-hover">Privacy policy</a>
                 <a className="link link-hover">Cookie policy</a>
                 <a className="link link-hover">Certificate and licencing</a>
             </nav>
+            {/* <nav className="m-auto text-center md:text-left">
+                <header className="footer-title text-gray-700 w-full opacity-100">
+                    Connect with Us
+                </header>
+                 <div className="grid grid-flow-col gap-2">
+                    <Link href="https://www.youtube.com" target="_blank">
+                       logo
+                    </Link>
+                    <Link href="https://www.facebook.com" target="_blank">
+                       logo
+                    </Link>
+                    <Link href="https://www.instagram.com" target="_blank">
+                      logo
+                    </Link>
+                    <Link href="https://www.tiktok.com" target="_blank">
+                       logo
+                    </Link>
+                </div> 
+            </nav> */}
         </footer>
     );
 }

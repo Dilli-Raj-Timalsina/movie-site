@@ -4,7 +4,8 @@ export default function OurClients() {
             <h1 className="text-3xl text-gray-900 font-bold md:py-14 py-7 text-center">
                 Our Clients
             </h1>
-            <div className="flex justify-around items-center ">
+
+            <div className=" flex justify-around items-center  animate-marquee whitespace-nowrap">
                 <img src="/mainlogo.png" alt="" className="w-32 h-fit" />
                 <img
                     src="https://nextjssite-mu.vercel.app/logo.webp"

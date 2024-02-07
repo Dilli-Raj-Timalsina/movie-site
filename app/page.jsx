@@ -45,7 +45,7 @@ export default function Home() {
                 autoPlay={true}
                 preload="auto"
                 ref={videoRef}
-                className="w-full h-128 md:h-full grayscale object-cover relative top-0 left-0 z-0 contrast-75 opacity-90"
+                className="w-full h-128 md:h-full grayscale object-cover relative top-0 left-0 z-0  opacity-90"
             >
                 <source src="/movievid.mp4" type="video/mp4" />
                 Your browser does not support the video tag.

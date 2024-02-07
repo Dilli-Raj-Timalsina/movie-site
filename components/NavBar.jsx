@@ -23,17 +23,17 @@ export default function NavBar() {
                             <img
                                 src="/logo.png"
                                 alt=""
-                                className="w-32 h-fit cursor-pointer"
+                                className="w-32 h-fit cursor-pointer bg-b"
                             />
                         </a>
                     </div>
                     <div className="flex-none hidden lg:block">
                         <ul className=" text-white menu flex gap-6 items-center menu-horizontal text-lg">
                             {/* Navbar menu content here */}
-                            <li className="cursor-pointer hover:text-yellow-300 bg-none">
+                            <li className="cursor-pointer hover:text-yellow-300 hover:bg-none ">
                                 <a>Home</a>
                             </li>
-                            <li className="cursor-pointer hover:text-yellow-300 bg-none">
+                            <li className="cursor-pointer hover:text-yellow-300 hover:bg-none">
                                 <button
                                     onClick={() => {
                                         router.push("/contact");
