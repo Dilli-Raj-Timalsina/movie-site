@@ -11,17 +11,38 @@ import ContactUs from "@/components/ContactUs";
 import OurGallery from "@/components/OurGallery";
 import Team from "@/components/Team";
 import { ContactUs2 } from "@/components/ContactUs";
-import { useRef, useEffect } from "react";
+import { useRef, useEffect, useState } from "react";
 
 export default function Home() {
     const videoRef = useRef(null);
+    const doSomething = async () => {
+        const res = await fetch("http://localhost:3000/auth/signup", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+                Authorization: `Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImRpbGxpcmFqdGltYWxzaW5hMzU0QGdtYWlsLmNvbSIsInJvbGVzIjpbInVzZXIiXSwicGFzc3dvcmQiOiIxMjM0Njc4OSIsImZpcnN0TmFtZSI6Ik5pc2NoYWwiLCJtaWRkbGVOYW1lIjoicmFqIiwibGFzdE5hbWUiOiJUaW1hbHNpbmEiLCJpYXQiOjE3MDczMTA0NzgsImV4cCI6MTcwNzMxNDA3OH0.jbXDjFMma5_qb4j4_1TsFfvVoB1Ndt7NcuMUp5wxQIc`,
+            },
+            body: JSON.stringify({
+                firstName: "Nischal",
+                lastName: "Timalsina",
+                middleName: "raj",
+                contact: 12345,
+                email: "dillirajtimalsina354@gmail.com",
+                password: "12346789",
+            }),
+        });
+        const result = await res.json();
+
+        console.log(result);
+    };
     useEffect(() => {
         videoRef.current.playbackRate = 0.5;
+        // doSomething();
     }, []);
     return (
         <div>
             <video
-                autoPlay="true"
+                autoPlay={true}
                 preload="auto"
                 ref={videoRef}
                 className="w-full h-128 md:h-full grayscale object-cover relative top-0 left-0 z-0 contrast-75 opacity-90"
