@@ -1,7 +1,55 @@
-import React from "react";
+"use client";
+import React, { useRef } from "react";
+import BounceSpinners from "@/components/spinners/BounceSpinners";
+import SuccessMessage from "@/components/spinners/SuccessMessage";
+import emailjs from "@emailjs/browser";
+import { useState } from "react";
 import NavBar from "@/components/NavBar";
 
 export default function ContactUsPage() {
+    const [formData, setFormData] = useState({
+        from_name: "",
+        to_name: "",
+        message: "",
+    });
+    const [loading, setLoading] = useState(false);
+    const [success, setSucess] = useState(false);
+    const handleChange = (event) => {
+        setFormData({ ...formData, [event.target.name]: event.target.value });
+    };
+
+    const sendEmail = (templateParams) => {
+        emailjs
+            .send(
+                "default_service",
+                "template_d5nvhbu",
+                templateParams,
+                "pwwGIhv0Mp6iAT3uD"
+            )
+            .then(
+                (response) => {
+                    console.log("SUCCESS!", response.status, response.text);
+                },
+                (error) => {
+                    console.log("FAILED...", error);
+                }
+            );
+    };
+
+    const submitHandler = (e) => {
+        e.preventDefault();
+        setLoading(true);
+        console.log(formData, "formData");
+        // sendEmail(formData);
+        setTimeout(() => {
+            setLoading(false);
+            setFormData({ from_name: "", to_name: "", message: "" });
+            setSucess(true);
+            setTimeout(() => {
+                setSucess(false);
+            }, 3000);
+        }, 3000);
+    };
     return (
         <div className="w-screen h-full bg-slate-50">
             <img
@@ -132,7 +180,7 @@ export default function ContactUsPage() {
                                 <h2 className="mb-4 text-2xl font-bold">
                                     Ready to Get Started?
                                 </h2>
-                                <form id="contactForm">
+                                <form id="contactForm" onSubmit={submitHandler}>
                                     <div className="mb-6">
                                         <div className="mx-0 mb-1 sm:mb-4">
                                             <div className="mx-0 mb-1 sm:mb-4">
@@ -142,11 +190,14 @@ export default function ContactUsPage() {
                                                 ></label>
                                                 <input
                                                     type="text"
-                                                    id="name"
+                                                    id="from_name"
+                                                    name="from_name"
+                                                    value={formData.from_name}
+                                                    onChange={handleChange}
+                                                    required
                                                     autoComplete="given-name"
                                                     placeholder="Your name"
                                                     className="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md dark:text-gray-300 sm:mb-0"
-                                                    name="name"
                                                 />
                                             </div>
                                             <div className="mx-0 mb-1 sm:mb-4">
@@ -156,11 +207,13 @@ export default function ContactUsPage() {
                                                 ></label>
                                                 <input
                                                     type="email"
-                                                    id="email"
-                                                    autoComplete="email"
-                                                    placeholder="Your email address"
+                                                    id="to_name"
+                                                    name="to_name"
+                                                    value={formData.to_name}
+                                                    required
+                                                    onChange={handleChange}
                                                     className="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md dark:text-gray-300 sm:mb-0"
-                                                    name="email"
+                                                    placeholder="email"
                                                 />
                                             </div>
                                         </div>
@@ -170,8 +223,12 @@ export default function ContactUsPage() {
                                                 className="pb-1 text-xs uppercase tracking-wider"
                                             ></label>
                                             <textarea
-                                                id="textarea"
-                                                name="textarea"
+                                                id="message"
+                                                name="message"
+                                                rows="4"
+                                                required
+                                                value={formData.message}
+                                                onChange={handleChange}
                                                 placeholder="Write your message..."
                                                 className="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md dark:text-gray-300 sm:mb-0"
                                             ></textarea>
@@ -179,12 +236,25 @@ export default function ContactUsPage() {
                                     </div>
                                     <div className="text-center">
                                         <button
+                                            disabled={loading}
                                             type="submit"
                                             className="w-full bg-blue-800 text-white px-6 py-3 font-xl rounded-md sm:mb-0"
                                         >
-                                            Send Message
+                                            {loading ? (
+                                                <BounceSpinners size={"w-4 h-4"} />
+                                            ) : (
+                                                <span>Send Message</span>
+                                            )}
                                         </button>
                                     </div>
+                                    {success && (
+                                        <SuccessMessage
+                                            message={
+                                                "contacted succesfully, we will reach you soon !"
+                                            }
+                                            position="top-10 right-10"
+                                        ></SuccessMessage>
+                                    )}
                                 </form>
                             </div>
                         </div>

@@ -1,4 +1,54 @@
+"use client";
+import React, { useRef } from "react";
+import BounceSpinners from "./spinners/BounceSpinners";
+import SuccessMessage from "./spinners/SuccessMessage";
+import emailjs from "@emailjs/browser";
+import { useState } from "react";
+
 export function ContactUs2() {
+    const [formData, setFormData] = useState({
+        from_name: "",
+        to_name: "",
+        message: "",
+    });
+    const [loading, setLoading] = useState(false);
+    const [success, setSucess] = useState(false);
+    const handleChange = (event) => {
+        setFormData({ ...formData, [event.target.name]: event.target.value });
+    };
+
+    const sendEmail = (templateParams) => {
+        emailjs
+            .send(
+                "default_service",
+                "template_d5nvhbu",
+                templateParams,
+                "pwwGIhv0Mp6iAT3uD"
+            )
+            .then(
+                (response) => {
+                    console.log("SUCCESS!", response.status, response.text);
+                },
+                (error) => {
+                    console.log("FAILED...", error);
+                }
+            );
+    };
+
+    const submitHandler = (e) => {
+        e.preventDefault();
+        setLoading(true);
+        console.log(formData, "formData");
+        // sendEmail(formData);
+        setTimeout(() => {
+            setLoading(false);
+            setFormData({ from_name: "", to_name: "", message: "" });
+            setSucess(true);
+            setTimeout(() => {
+                setSucess(false);
+            }, 3000);
+        }, 3000);
+    };
     return (
         <div className="container my-24 mx-auto md:px-6 " name="contact">
             {/* <!-- Section: Design Block --> */}
@@ -11,12 +61,16 @@ export function ContactUs2() {
 
                 <div className="flex flex-wrap">
                     <div className="mb-12 w-full shrink-0 grow-0 basis-auto md:px-3 lg:mb-0 lg:w-5/12 lg:px-6">
-                        <form>
+                        <form onSubmit={submitHandler}>
                             <div className="relative mb-6" data-te-input-wrapper-init>
                                 <input
-                                    type="text"
                                     className="peer block min-h-[auto] w-full rounded border bg-transparent py-[0.32rem] px-3 leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-primary data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 dark:peer-focus:text-primary [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0 bg-white border-slate-600 "
-                                    id="exampleInput90"
+                                    type="text"
+                                    id="from_name"
+                                    name="from_name"
+                                    value={formData.from_name}
+                                    onChange={handleChange}
+                                    required
                                     placeholder="Name"
                                 />
                                 <label
@@ -29,8 +83,12 @@ export function ContactUs2() {
                             <div className="relative mb-6" data-te-input-wrapper-init>
                                 <input
                                     type="email"
+                                    id="to_name"
+                                    name="to_name"
+                                    value={formData.to_name}
+                                    required
+                                    onChange={handleChange}
                                     className="peer block min-h-[auto] w-full rounded border bg-transparent py-[0.32rem] px-3 leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-primary data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 dark:peer-focus:text-primary [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0 bg-white border-slate-600"
-                                    id="exampleInput91 "
                                     placeholder="Email address"
                                 />
                                 <label
@@ -42,9 +100,13 @@ export function ContactUs2() {
                             </div>
                             <div className="relative mb-6" data-te-input-wrapper-init>
                                 <textarea
+                                    id="message"
+                                    name="message"
+                                    rows="4"
+                                    required
+                                    value={formData.message}
+                                    onChange={handleChange}
                                     className="peer block min-h-[auto] w-full rounded border bg-transparent py-[0.32rem] px-3 leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0 bg-white border-slate-600"
-                                    id="exampleFormControlTextarea1 bg-white border-slate-600"
-                                    rows="3"
                                     placeholder="Your message"
                                 ></textarea>
                                 <label
@@ -70,13 +132,26 @@ export function ContactUs2() {
                                 </label>
                             </div>
                             <button
-                                type="button"
+                                disabled={loading}
+                                type="submit"
                                 data-te-ripple-init
                                 data-te-ripple-color="light"
                                 className="mb-6 inline-block w-full rounded bg-primary px-6 pt-2.5 pb-2 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]"
                             >
-                                Send
+                                {loading ? (
+                                    <BounceSpinners size={"w-4 h-4"} />
+                                ) : (
+                                    <span>Send</span>
+                                )}
                             </button>
+                            {success && (
+                                <SuccessMessage
+                                    message={
+                                        "contacted succesfully, we will reach you soon !"
+                                    }
+                                    position="top-10 right-10"
+                                ></SuccessMessage>
+                            )}
                         </form>
                     </div>
                     <div className="w-full shrink-0 grow-0 basis-auto lg:w-7/12">
