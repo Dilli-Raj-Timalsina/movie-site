@@ -49,7 +49,7 @@ function ImageDescription() {
                         <div className="w-full shrink-0 grow-0 basis-auto md:w-8/12">
                             <div className="px-6 py-12 md:px-12">
                                 <h2 className="mb-6 text-3xl font-bold">
-                                    Woodlang upcoming Movie Coming Soon January .
+                                    WoodLand upcoming Movie Coming Soon January .
                                 </h2>
                                 <p className="mb-6 pb-2 text-neutral-500 dark:text-neutral-300">
                                     In the enchanting town of Misty Pines, nestled deep
@@ -101,11 +101,11 @@ function ImageDescription() {
                                 <h3 className="text-2xl font-semibold text-gray-700 mb-4">
                                     Title
                                 </h3>
-                                <p className="text-gray-600">Woodlang</p>
+                                <p className="text-gray-600">WoodLand</p>
                                 <h3 className="text-2xl font-semibold text-gray-700 mt-8 mb-4">
                                     Release Date
                                 </h3>
-                                <p className="text-gray-600">February 15, 2024</p>
+                                <p className="text-gray-600">May 15, 2024</p>
                                 <h3 className="text-2xl font-semibold text-gray-700 mt-8 mb-4">
                                     Duration
                                 </h3>
@@ -116,9 +116,9 @@ function ImageDescription() {
                                     Actors
                                 </h3>
                                 <ul className="text-gray-600">
-                                    <li>John Doe</li>
-                                    <li>Jane Smith</li>
-                                    <li>Michael Johnson</li>
+                                    <li>Prabal Sonam Ghisisng</li>
+                                    <li>Salina Thapa Magar</li>
+                                    <li>Chris Appleton</li>
                                     {/* Add more actors as needed */}
                                 </ul>
                                 <h3 className="text-2xl font-semibold text-gray-700 mt-8 mb-4">

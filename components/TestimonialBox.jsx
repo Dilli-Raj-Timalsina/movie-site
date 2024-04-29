@@ -15,7 +15,7 @@ export default function TestimonialBox() {
                                 className="w-32 h-32 rounded-full shadow-lg dark:shadow-black/20"
                             />
                         </div>
-                        <h5 className="mb-2 text-lg font-bold">Maria Smantha</h5>
+                        <h5 className="mb-2 text-lg font-bold">Ram Sah</h5>
                         <h6 className="mb-4 font-medium text-primary dark:text-primary-400">
                             Music Video
                         </h6>
@@ -103,7 +103,7 @@ export default function TestimonialBox() {
                                 className="w-32 h-32 rounded-full shadow-lg dark:shadow-black/20"
                             />
                         </div>
-                        <h5 className="mb-2 text-lg font-bold">Lisa Cudrow</h5>
+                        <h5 className="mb-2 text-lg font-bold">Gopi Kumar Sah</h5>
                         <h6 className="mb-4 font-medium text-primary dark:text-primary-400">
                             Film Producer
                         </h6>
