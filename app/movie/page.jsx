@@ -49,7 +49,7 @@ function ImageDescription() {
                         <div className="w-full shrink-0 grow-0 basis-auto md:w-8/12">
                             <div className="px-6 py-12 md:px-12">
                                 <h2 className="mb-6 text-3xl font-bold">
-                                    WoodLand upcoming Movie Coming Soon January .
+                                    WoodLand upcoming Movie Coming Soon .
                                 </h2>
                                 <p className="mb-6 pb-2 text-neutral-500 dark:text-neutral-300">
                                     In the enchanting town of Misty Pines, nestled deep
