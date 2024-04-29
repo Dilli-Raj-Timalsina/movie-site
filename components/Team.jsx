@@ -12,7 +12,7 @@ export default function Team() {
                 position="Co-Founder"
             ></ImageBox>
             <ImageBox
-                imgurl={"/team4.jpeg"}
+                imgurl={"/team6.jpeg"}
                 name="Karam Gurung"
                 position="Producer"
             ></ImageBox>
