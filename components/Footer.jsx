@@ -14,9 +14,9 @@ export default function Footer() {
                     duration={500}
                 >
                     <img
-                        src="/logo.png"
+                        src="/bgremovedlogofinal.png"
                         alt=""
-                        className="w-24 h-fit cursor-pointer bg-slate-400"
+                        className="w-24 h-fit cursor-pointer "
                     />
                 </Link>
                 <p className="">

@@ -21,9 +21,9 @@ export default function NavBar() {
                     <div className="flex-1 px-2 mx-2 navbar-end lg:navbar-start ">
                         <a href="/">
                             <img
-                                src="/logo.png"
+                                src="/bgremovedlogofinal.png"
                                 alt=""
-                                className="w-32 h-fit cursor-pointer bg-b"
+                                className="w-44 h-fit cursor-pointer "
                             />
                         </a>
                     </div>
