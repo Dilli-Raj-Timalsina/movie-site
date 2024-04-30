@@ -36,30 +36,29 @@ export default function Home() {
         console.log(result);
     };
     useEffect(() => {
-        videoRef.current.playbackRate = 0.5;
+        // videoRef.current.playbackRate = 0.5;
         // doSomething();
     }, []);
     return (
         <div>
-            <video
-                autoPlay={true}
-                preload="auto"
-                ref={videoRef}
-                className="w-full h-128 md:h-full grayscale object-cover relative top-0 left-0 z-0  opacity-90"
-            >
-                <source src="/movievid.mp4" type="video/mp4" />
-                Your browser does not support the video tag.
-            </video>
+            <img
+                src={
+                    "https://images.unsplash.com/photo-1490971774356-7fac993cc438?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                }
+                className="w-full h-128 md:h-full  relative top-0 left-0 z-0 "
+            ></img>
             <NavBar></NavBar>
             <YourProbSection></YourProbSection>
+            <hr />
             <div
                 name="services"
                 className=" md:w-screen h-full  flex flex-row justify-around md:pb-16 pb-10"
             >
                 <FindOut></FindOut>
             </div>
+
             <div
-                className="w-screen h-full  flex flex-col items-center my-10   bg-white"
+                className="w-screen h-full  flex flex-col items-center mt-10 pb-10   bg-slate-100"
                 name="services"
             >
                 <h1 className="text-3xl text-pink-600 font-semibold mt-10">
@@ -67,8 +66,9 @@ export default function Home() {
                 </h1>
                 <ServiceCard></ServiceCard>
             </div>
+            <hr className="text-2xl " />
             <div
-                className="w-screen h-full  flex flex-col items-center my-10   bg-white"
+                className="w-screen h-full  flex flex-col items-center   bg-slate-50"
                 name="gallery"
             >
                 <h1 className="text-3xl text-pink-600 font-semibold my-16">
@@ -76,21 +76,27 @@ export default function Home() {
                 </h1>
                 <OurGallery></OurGallery>
             </div>
+            <hr />
             <div className="text-center" name="aboutus">
                 <h1 className="text-3xl text-pink-600 font-semibold my-16">
                     Meet Our Team
                 </h1>
                 <Team></Team>
             </div>
+            <hr />
             <div className="text-center">
                 <h1 className="text-4xl text-pink-600 font-semibold mt-16 ">
                     Upcoming Movie's
                 </h1>
                 <UpcomingMoviesSection></UpcomingMoviesSection>
             </div>
+            <hr />
             <WhyUs></WhyUs>
+            <hr />
             <OurClients></OurClients>
+            <hr />
             <TestimonialBox></TestimonialBox>
+            <hr />
             <ContactUs2></ContactUs2>
         </div>
     );

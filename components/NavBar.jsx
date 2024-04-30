@@ -28,12 +28,12 @@ export default function NavBar() {
                         </a>
                     </div>
                     <div className="flex-none hidden lg:block">
-                        <ul className=" text-white menu flex gap-6 items-center menu-horizontal text-lg">
+                        <ul className=" text-white menu flex gap-6 items-center menu-horizontal text-lg bg-none">
                             {/* Navbar menu content here */}
                             <li className="cursor-pointer hover:text-yellow-300 hover:bg-none ">
-                                <a>Home</a>
+                                <a href="/">Home</a>
                             </li>
-                            <li className="cursor-pointer hover:text-yellow-300 hover:bg-none">
+                            <li className="cursor-pointer hover:text-yellow-300 bg-none">
                                 <button
                                     onClick={() => {
                                         router.push("/contact");

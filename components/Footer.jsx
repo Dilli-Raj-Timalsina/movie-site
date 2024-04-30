@@ -29,11 +29,21 @@ export default function Footer() {
             </nav>
             <nav>
                 <header className="footer-title text-white text-xl">Quick Links</header>
-                <a className="link link-hover">Our Services</a>
-                <a className="link link-hover">About Us</a>
-                <a className="link link-hover">Gallery</a>
-                <a className="link link-hover">Testimonials</a>
-                <a className="link link-hover">Contact Us</a>
+                <a className="link link-hover" href="/">
+                    Our Services
+                </a>
+                <a className="link link-hover" href="/contact">
+                    About Us
+                </a>
+                <a className="link link-hover" href="/">
+                    Gallery
+                </a>
+                <a className="link link-hover" href="/">
+                    Testimonials
+                </a>
+                <a className="link link-hover" href="/contact">
+                    Contact Us
+                </a>
                 <a className="link link-hover">Support and Help</a>
             </nav>
             <nav>

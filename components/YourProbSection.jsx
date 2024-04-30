@@ -8,7 +8,7 @@ export default function YourProbSection() {
                 <h1 className=" md:text-6xl text-3xl text-white  font-mono font-semibold md:mt-4">
                     PREMIS VISION UK LIMITED
                 </h1>
-                <p className="text-yellow-500 md:mt-6 md:w-1/2 w-full md:text-3xl  text-lg h-fit font-bold drop-shadow-lg">
+                <p className="text-white-500 md:mt-6 md:w-1/2 w-full md:text-3xl  text-lg h-fit font-bold drop-shadow-lg">
                     Inspiring Breadthing <br />
                     and Living Creativity .
                 </p>
