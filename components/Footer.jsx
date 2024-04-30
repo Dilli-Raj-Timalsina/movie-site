@@ -48,9 +48,15 @@ export default function Footer() {
             </nav>
             <nav>
                 <header className="footer-title text-white text-xl">Terms </header>
-                <a className="link link-hover">Privacy policy</a>
-                <a className="link link-hover">Cookie policy</a>
-                <a className="link link-hover">Certificate and licencing</a>
+                <a className="link link-hover" href="/privacy">
+                    Privacy policy
+                </a>
+                <a className="link link-hover" href="/privacy">
+                    Cookie policy
+                </a>
+                <a className="link link-hover" href="/privacy">
+                    Certificate and licencing
+                </a>
             </nav>
             {/* <nav className="m-auto text-center md:text-left">
                 <header className="footer-title text-gray-700 w-full opacity-100">
