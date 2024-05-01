@@ -39,7 +39,7 @@ export function ContactUs2() {
         e.preventDefault();
         setLoading(true);
         console.log(formData, "formData");
-        // sendEmail(formData);
+        sendEmail(formData);
         setTimeout(() => {
             setLoading(false);
             setFormData({ from_name: "", to_name: "", message: "" });
