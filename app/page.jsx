@@ -68,7 +68,7 @@ export default function Home() {
             </div>
             <hr className="text-2xl " />
             <div
-                className="w-screen h-full  flex flex-col items-center   bg-slate-50"
+                className="w-screen h-fit  flex flex-col items-center   bg-slate-50"
                 name="gallery"
             >
                 <h1 className="text-3xl text-pink-600 font-semibold my-16">
