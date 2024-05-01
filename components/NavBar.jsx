@@ -23,7 +23,7 @@ export default function NavBar() {
                             <img
                                 src="/bgremovedlogofinal.png"
                                 alt=""
-                                className="w-44 h-fit cursor-pointer "
+                                className="md:w-44 md:h-20 w-28 h-12 cursor-pointer "
                             />
                         </a>
                     </div>
