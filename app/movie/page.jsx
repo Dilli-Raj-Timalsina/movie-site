@@ -12,7 +12,7 @@ export default function Home() {
             <h1 className="text-3xl text-pink-600 font-semibold mt-10 mb-8 text-center">
                 Related Videos{" "}
             </h1>
-            <div class="grid md:grid-cols-2 items-center justify-center grid-cols-1 gap-y-6  md:gap-y-2 px-20 py-10 ">
+            <div class="grid md:grid-cols-2 items-center justify-center grid-cols-1 gap-y-6  md:gap-y-2 md:px-20 pl-6 py-10 ">
                 <VideoFrame></VideoFrame>
             </div>
         </div>
@@ -24,7 +24,7 @@ function VideoFrame() {
         <iframe
             src={`https://www.youtube.com/embed/vScEyLopvXE`}
             title="YouTube Video"
-            className=""
+            className="w-96 h-72 md:w-5/6 md:h-96"
             height={400}
             width={680}
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

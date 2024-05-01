@@ -1,7 +1,7 @@
 export default function TestimonialBox() {
     return (
         <div
-            className="container my-24 mx-auto md:px-6 bg-slate-200 py-10"
+            className="container my-24 mx-auto md:px-6 bg-slate-200 py-10 px-10"
             name="testimonials"
         >
             <section className="mb-32 text-center">

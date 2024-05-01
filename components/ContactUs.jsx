@@ -50,7 +50,7 @@ export function ContactUs2() {
         }, 3000);
     };
     return (
-        <div className="container my-24 mx-auto md:px-6 " name="contact">
+        <div className="container my-24 mx-auto md:px-6 px-10" name="contact">
             {/* <!-- Section: Design Block --> */}
             <section className="mb-32">
                 <div className="flex justify-center">
