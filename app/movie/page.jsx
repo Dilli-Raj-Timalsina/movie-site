@@ -12,7 +12,7 @@ export default function Home() {
             <h1 className="text-3xl text-pink-600 font-semibold mt-10 mb-8 text-center">
                 Related Videos{" "}
             </h1>
-            <div class="grid md:grid-cols-2 items-center justify-center grid-cols-1 gap-y-6  md:gap-y-2 md:px-20 pl-6 py-10 ">
+            <div class="grid md:grid-cols-2 items-center justify-center grid-cols-1 gap-y-6  md:gap-y-2 md:px-20 pl-0 py-10 ">
                 <VideoFrame></VideoFrame>
             </div>
         </div>
