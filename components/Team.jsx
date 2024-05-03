@@ -1,7 +1,7 @@
 export default function Team() {
     return (
         <>
-            <div className="carousel carousel-center w-full p-4 space-x-4 bg-white rounded-box  md:hidden flex ">
+            {/* <div className="carousel carousel-center w-full p-4 space-x-4 bg-white rounded-box  md:hidden flex ">
                 <div className="carousel-item ">
                     <ImageBox
                         imgurl={"/director.png"}
@@ -30,8 +30,8 @@ export default function Team() {
                         position="Producer"
                     ></ImageBox>
                 </div>
-            </div>
-            <div className="grid grid-cols-4  h-fit  md:gap-x-10 gap-y-4 md:px-24 md:py-20  px-2 py-10 bg-gray-800  gap-x-5 hidden md:flex ">
+            </div> */}
+            <div className="grid grid-cols-4  h-fit  md:gap-x-10 gap-y-4 md:px-24 md:py-20  px-2 py-10 bg-gray-800  md:gap-x-5  ">
                 <ImageBox
                     imgurl={"/director.png"}
                     name="Prem Lama"
@@ -60,7 +60,7 @@ export default function Team() {
 function ImageBox({ imgurl, name, position }) {
     return (
         <div className="text-start ">
-            <img src={`${imgurl}`} alt="" className="md:w-72 md:h-96 w-56 h-80" />
+            <img src={`${imgurl}`} alt="" className="md:w-72 md:h-96 w-56 h-72" />
             <h1 className="text-white text-xs md:text-4xl font-bold mt-6 text-nowrap	">
                 {name}
             </h1>
