@@ -58,17 +58,17 @@ export default function ContactUsPage() {
                 className="w-screen h-24 md:h-28 relative z-0 bg-sky-950"
             />
             <NavBar2></NavBar2>
-            <section className="bg-blue-50 dark:bg-slate-800" id="contact">
+            <section className="bg-blue-50 " id="contact">
                 <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-20">
                     <div className="mb-4">
                         <div className="mb-6 max-w-3xl text-center sm:text-center md:mx-auto md:mb-12">
-                            <p className="text-base font-semibold uppercase tracking-wide text-blue-600 dark:text-blue-200">
+                            <p className="text-base font-semibold uppercase tracking-wide text-blue-600 ">
                                 Contact
                             </p>
-                            <h2 className="font-heading mb-4 font-bold tracking-tight text-gray-900 dark:text-white text-3xl sm:text-5xl">
+                            <h2 className="font-heading mb-4 font-bold tracking-tight text-gray-900  text-3xl sm:text-5xl">
                                 Get in Touch
                             </h2>
-                            <p className="mx-auto mt-4 max-w-3xl text-xl text-gray-600 dark:text-slate-400">
+                            <p className="mx-auto mt-4 max-w-3xl text-xl text-gray-600 ">
                                 In hac habitasse platea dictumst
                             </p>
                         </div>
@@ -76,7 +76,7 @@ export default function ContactUsPage() {
                     <div className="flex items-stretch justify-center">
                         <div className="grid md:grid-cols-2">
                             <div className="h-full pr-6">
-                                <p className="mt-3 mb-12 text-lg text-gray-600 dark:text-slate-400">
+                                <p className="mt-3 mb-12 text-lg text-gray-600 ">
                                     We'd love to hear from you! Whether you have a
                                     question, feedback, or simply want to say hello, we're
                                     here to help. Reach out to us, and we'll be sure to
@@ -102,13 +102,13 @@ export default function ContactUsPage() {
                                             </svg>
                                         </div>
                                         <div className="ml-4 mb-4">
-                                            <h3 className="mb-2 text-lg font-medium leading-6 text-gray-900 dark:text-white">
+                                            <h3 className="mb-2 text-lg font-medium leading-6 text-gray-900 ">
                                                 Our Address
                                             </h3>
-                                            <p className="text-gray-600 dark:text-slate-400">
+                                            <p className="text-gray-600 ">
                                                 UNIT-21 MEADWAY PRECINCT TILEHURST READING
                                             </p>
-                                            <p className="text-gray-600 dark:text-slate-400">
+                                            <p className="text-gray-600">
                                                 UNITED KINGDOM RG30 4AA
                                             </p>
                                         </div>
@@ -133,13 +133,13 @@ export default function ContactUsPage() {
                                             </svg>
                                         </div>
                                         <div className="ml-4 mb-4">
-                                            <h3 className="mb-2 text-lg font-medium leading-6 text-gray-900 dark:text-white">
+                                            <h3 className="mb-2 text-lg font-medium leading-6 text-gray-900 ">
                                                 Contact
                                             </h3>
-                                            <p className="text-gray-600 dark:text-slate-400">
+                                            <p className="text-gray-600">
                                                 Mobile: 07462295395
                                             </p>
-                                            <p className="text-gray-600 dark:text-slate-400">
+                                            <p className="text-gray-600 ">
                                                 Mail: contact@premisvision.co.uk
                                             </p>
                                         </div>
@@ -163,13 +163,13 @@ export default function ContactUsPage() {
                                             </svg>
                                         </div>
                                         <div className="ml-4 mb-4">
-                                            <h3 className="mb-2 text-lg font-medium leading-6 text-gray-900 dark:text-white">
+                                            <h3 className="mb-2 text-lg font-medium leading-6 text-gray-900 ">
                                                 Working hours
                                             </h3>
-                                            <p className="text-gray-600 dark:text-slate-400">
+                                            <p className="text-gray-600 ">
                                                 Monday - Friday: 08:00 - 17:00
                                             </p>
-                                            <p className="text-gray-600 dark:text-slate-400">
+                                            <p className="text-gray-600 ">
                                                 Saturday &amp; Sunday: 08:00 - 12:00
                                             </p>
                                         </div>
@@ -197,7 +197,7 @@ export default function ContactUsPage() {
                                                     required
                                                     autoComplete="given-name"
                                                     placeholder="Your name"
-                                                    className="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md dark:text-gray-300 sm:mb-0"
+                                                    className="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md  sm:mb-0 dark:bg-white"
                                                 />
                                             </div>
                                             <div className="mx-0 mb-1 sm:mb-4">
@@ -212,7 +212,7 @@ export default function ContactUsPage() {
                                                     value={formData.to_name}
                                                     required
                                                     onChange={handleChange}
-                                                    className="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md dark:text-gray-300 sm:mb-0"
+                                                    className="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md  sm:mb-0 dark:bg-white"
                                                     placeholder="email"
                                                 />
                                             </div>
@@ -230,7 +230,7 @@ export default function ContactUsPage() {
                                                 value={formData.message}
                                                 onChange={handleChange}
                                                 placeholder="Write your message..."
-                                                className="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md dark:text-gray-300 sm:mb-0"
+                                                className="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md  sm:mb-0 dark:bg-white"
                                             ></textarea>
                                         </div>
                                     </div>

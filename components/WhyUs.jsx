@@ -8,7 +8,7 @@ export default function WhyUs() {
                         <h2 className="mb-6 text-center text-3xl font-bold">
                             Why choose Us ?
                         </h2>
-                        <p className="mb-16 text-neutral-500 dark:text-neutral-300">
+                        <p className="mb-16 text-neutral-500 ">
                             Choose us for top-notch yet budget-friendly solutions.
                             Experienced devs, plus a dash of digital marketing magic. Your
                             success, simplified!
@@ -35,7 +35,7 @@ export default function WhyUs() {
                             </svg>
                         </div>
                         <h5 className="mb-4 text-lg font-bold">Support 24/7</h5>
-                        <p className="text-neutral-500 dark:text-neutral-300">
+                        <p className="text-neutral-500 ">
                             Our dedicated team is committed to providing prompt and
                             reliable support, any time of the day or night.
                         </p>
@@ -59,7 +59,7 @@ export default function WhyUs() {
                             </svg>
                         </div>
                         <h5 className="mb-4 text-lg font-bold">Experienced Team</h5>
-                        <p className="text-neutral-500 dark:text-neutral-300">
+                        <p className="text-neutral-500 ">
                             Our production house is home to a team of seasoned
                             professionals ,Your satisfaction is our priority .
                         </p>
@@ -83,7 +83,7 @@ export default function WhyUs() {
                             </svg>
                         </div>
                         <h5 className="mb-4 text-lg font-bold">Extremely fast</h5>
-                        <p className="text-neutral-500 dark:text-neutral-300">
+                        <p className="text-neutral-500 ">
                             we care your time and it's our responsibility to delivery
                             super past work and decision to you .
                         </p>
@@ -112,7 +112,7 @@ export default function WhyUs() {
                             </svg>
                         </div>
                         <h5 className="mb-4 text-lg font-bold">Commitment to Quality</h5>
-                        <p className="text-neutral-500 dark:text-neutral-300">
+                        <p className="text-neutral-500">
                             We are committed to delivering top-notch productions,
                             emphasizing attention to detail and a dedication
                         </p>

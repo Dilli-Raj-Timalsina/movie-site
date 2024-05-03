@@ -5,7 +5,7 @@ const UpcomingMoviesSection = () => {
         <div className="container mb-24 mt-16 mx-auto md:px-6">
             {/* <!-- Section: Design Block --> */}
             <section className="mb-32 text-center md:text-left">
-                <div className="block rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
+                <div className="block rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]">
                     <div className="flex flex-wrap items-center">
                         <div className="block w-full shrink-0 grow-0 basis-auto md:w-4/12 lg:flex">
                             <img
@@ -19,7 +19,7 @@ const UpcomingMoviesSection = () => {
                                 <h2 className="mb-6 text-3xl font-bold">
                                     WoodLand upcoming Movie Coming Soon January .
                                 </h2>
-                                <p className="mb-6 pb-2 text-neutral-500 dark:text-neutral-300">
+                                <p className="mb-6 pb-2 text-neutral-500 ">
                                     In the enchanting town of Misty Pines, nestled deep
                                     within the rolling hills of the countryside, a
                                     mysterious secret lies buried beneath its serene
