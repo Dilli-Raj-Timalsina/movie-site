@@ -1,7 +1,7 @@
 export default function HomePageMovie() {
     return (
         <div className="w-screen h-fit bg-slate-50">
-            <div className="grid md:grid-cols-2 items-center justify-center grid-cols- gap-y-6  md:gap-y-2 md:px-20 px-2  py-10 ">
+            <div className="grid md:grid-cols-2  grid-cols-1 gap-y-2 md:justify-between md:gap-y-2 md:px-20 px-8  py-10 ">
                 <VideoFrame className={" w-full h-80 md:w-5/6 md:h-96"}></VideoFrame>
                 <VideoFrame
                     className={" w-full h-80 md:w-5/6 md:h-96 hidden md:flex"}
