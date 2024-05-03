@@ -4,7 +4,7 @@ import BounceSpinners from "@/components/spinners/BounceSpinners";
 import SuccessMessage from "@/components/spinners/SuccessMessage";
 import emailjs from "@emailjs/browser";
 import { useState } from "react";
-import NavBar from "@/components/NavBar";
+import NavBar2 from "@/components/NavBar2";
 
 export default function ContactUsPage() {
     const [formData, setFormData] = useState({
@@ -57,7 +57,7 @@ export default function ContactUsPage() {
                 alt=""
                 className="w-screen h-24 md:h-28 relative z-0 bg-sky-950"
             />
-            <NavBar></NavBar>
+            <NavBar2></NavBar2>
             <section className="bg-blue-50 dark:bg-slate-800" id="contact">
                 <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-20">
                     <div className="mb-4">

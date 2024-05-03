@@ -1,5 +1,4 @@
 "use client";
-import YourProbSection from "@/components/YourProbSection";
 import ServiceCard from "@/components/ServiceCard";
 import FindOut from "@/components/FindOut";
 import UpcomingMoviesSection from "@/components/UpComing";
@@ -7,11 +6,11 @@ import WhyUs from "@/components/WhyUs";
 import OurClients from "@/components/OurClients";
 import TestimonialBox from "@/components/TestimonialBox";
 import NavBar from "@/components/NavBar";
-import ContactUs from "@/components/ContactUs";
 import OurGallery from "@/components/OurGallery";
 import Team from "@/components/Team";
 import { ContactUs2 } from "@/components/ContactUs";
 import { useRef, useEffect, useState } from "react";
+import HomePageMovie from "@/components/HomePageMovie";
 
 export default function Home() {
     const videoRef = useRef(null);
@@ -42,21 +41,19 @@ export default function Home() {
     return (
         <div>
             <img
-                src={
-                    "https://images.unsplash.com/photo-1490971774356-7fac993cc438?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                }
-                className="w-full h-128 md:h-full  relative top-0 left-0 z-0 "
+                src={"/landingimage.avif"}
+                className="w-full h-96 md:h-full  relative top-0 left-0 z-0 "
             ></img>
             <NavBar></NavBar>
-            <YourProbSection></YourProbSection>
+            {/* <YourProbSection></YourProbSection> */}
             <hr />
+            <HomePageMovie></HomePageMovie>
             <div
                 name="services"
                 className=" md:w-screen h-full  flex flex-row justify-around md:pb-16 pb-10"
             >
                 <FindOut></FindOut>
             </div>
-
             <div
                 className="w-screen h-full  flex flex-col items-center mt-10 pb-10   bg-slate-100"
                 name="services"

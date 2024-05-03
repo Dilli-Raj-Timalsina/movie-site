@@ -8,7 +8,6 @@ export default function Referral() {
                 className="w-screen h-24 md:h-28 relative z-0 bg-sky-950"
             />
             <NavBar></NavBar>
-
             <form
                 action=""
                 method="post"
