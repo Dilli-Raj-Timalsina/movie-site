@@ -127,10 +127,10 @@ export default function NavBar() {
                 ></label>
                 <ul className="  w-80 min-h-full  bg-base-200 flex flex-col gap-8 text-2xl items-center pt-14">
                     {/* Sidebar content here */}
-                    <li className="cursor-pointer hover:text-yellow-300 bg-none">
+                    <li className="cursor-pointer hover:text-yellow-300 bg-none  dark:text-white">
                         <a>Home</a>
                     </li>
-                    <li className="cursor-pointer hover:text-yellow-300 bg-none">
+                    <li className="cursor-pointer hover:text-yellow-300 bg-none  dark:text-white">
                         <button
                             onClick={() => {
                                 router.push("/contact");
@@ -139,7 +139,7 @@ export default function NavBar() {
                             About Us
                         </button>
                     </li>
-                    <li className="cursor-pointer hover:text-yellow-300 bg-none">
+                    <li className="cursor-pointer hover:text-yellow-300 bg-none  dark:text-white">
                         <Link
                             activeClass="active"
                             to="services"
@@ -151,7 +151,7 @@ export default function NavBar() {
                             Services
                         </Link>
                     </li>
-                    <li className="cursor-pointer hover:text-yellow-300 bg-none">
+                    <li className="cursor-pointer hover:text-yellow-300 bg-none  dark:text-white">
                         <Link
                             activeClass="active"
                             to="gallery"
@@ -163,7 +163,7 @@ export default function NavBar() {
                             Gallery
                         </Link>
                     </li>
-                    <li className="cursor-pointer hover:text-yellow-300 bg-none">
+                    <li className="cursor-pointer hover:text-yellow-300 bg-none  dark:text-white">
                         <Link
                             activeClass="active"
                             to="clients"
@@ -175,7 +175,7 @@ export default function NavBar() {
                             Clients
                         </Link>
                     </li>
-                    <li className="cursor-pointer hover:text-yellow-300 bg-none">
+                    <li className="cursor-pointer hover:text-yellow-300 bg-none  dark:text-white">
                         <Link
                             activeClass="active"
                             to="testimonials"
@@ -187,7 +187,7 @@ export default function NavBar() {
                             Testimonials
                         </Link>
                     </li>
-                    <li className="cursor-pointer hover:text-yellow-300 ">
+                    <li className="cursor-pointer hover:text-yellow-300  dark:text-white">
                         <Link
                             activeClass="active"
                             to="contact"

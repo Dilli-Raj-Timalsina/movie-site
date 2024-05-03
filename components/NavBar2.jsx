@@ -69,10 +69,10 @@ export default function NavBar2() {
                 ></label>
                 <ul className="  w-80 min-h-full  bg-base-200 flex flex-col gap-8 text-2xl items-center pt-14">
                     {/* Sidebar content here */}
-                    <li className="cursor-pointer hover:text-yellow-300 bg-none">
-                        <a>Home</a>
+                    <li className="cursor-pointer hover:text-yellow-300 bg-none  dark:text-white">
+                        <a href="/">Home</a>
                     </li>
-                    <li className="cursor-pointer hover:text-yellow-300 bg-none">
+                    <li className="cursor-pointer hover:text-yellow-300 bg-none dark:text-white">
                         <button
                             onClick={() => {
                                 router.push("/contact");
@@ -81,65 +81,20 @@ export default function NavBar2() {
                             About Us
                         </button>
                     </li>
-                    <li className="cursor-pointer hover:text-yellow-300 bg-none">
-                        <Link
-                            activeClass="active"
-                            to="services"
-                            spy={true}
-                            smooth={true}
-                            offset={50}
-                            duration={800}
-                        >
-                            Services
-                        </Link>
+                    <li className="cursor-pointer hover:text-yellow-300 bg-none  dark:text-white">
+                        <a href="/">Services</a>
                     </li>
-                    <li className="cursor-pointer hover:text-yellow-300 bg-none">
-                        <Link
-                            activeClass="active"
-                            to="gallery"
-                            spy={true}
-                            smooth={true}
-                            offset={50}
-                            duration={800}
-                        >
-                            Gallery
-                        </Link>
+                    <li className="cursor-pointer hover:text-yellow-300 bg-none  dark:text-white">
+                        <a href="/">Gallery</a>
                     </li>
-                    <li className="cursor-pointer hover:text-yellow-300 bg-none">
-                        <Link
-                            activeClass="active"
-                            to="clients"
-                            spy={true}
-                            smooth={true}
-                            offset={50}
-                            duration={800}
-                        >
-                            Clients
-                        </Link>
+                    <li className="cursor-pointer hover:text-yellow-300 bg-none  dark:text-white">
+                        <a href="/">Clients</a>
                     </li>
-                    <li className="cursor-pointer hover:text-yellow-300 bg-none">
-                        <Link
-                            activeClass="active"
-                            to="testimonials"
-                            spy={true}
-                            smooth={true}
-                            offset={50}
-                            duration={800}
-                        >
-                            Testimonials
-                        </Link>
+                    <li className="cursor-pointer hover:text-yellow-300 bg-none  dark:text-white">
+                        <a href="/">Testimonials</a>
                     </li>
-                    <li className="cursor-pointer hover:text-yellow-300 ">
-                        <Link
-                            activeClass="active"
-                            to="contact"
-                            spy={true}
-                            smooth={true}
-                            offset={50}
-                            duration={800}
-                        >
-                            Contact Us
-                        </Link>
+                    <li className="cursor-pointer hover:text-yellow-300  dark:text-white">
+                        <a href="/">contact Us</a>
                     </li>
                 </ul>
             </div>
